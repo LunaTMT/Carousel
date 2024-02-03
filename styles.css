@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    max-width: 50%;
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin-bottom: 0;
+} 
+
+#line {
+    background-color: #297fb8;
+    width: 10vw; /* Set a fixed width */
+    height: 0.5vh; /* Set a fixed height */
+    margin-top: 0.5%;
+    margin-bottom: 2.5%;
+}
+
+#name {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 3vw;
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+#job-title {
+    font-size: 1.5vw;
+    margin: 0;
+    color: #3498db;
+}
+
+#text-info {
+    color: grey;
+    font-style: italic;
+}
+
+img {
+    border-radius: 50%;
+    width: 15%;
+    height: 20%;
+}
+
+.text {
+    width: 50%;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%; /* Set your preferred width */
+    margin: 0;
+  }
+  
+  .button-container button {
+    color: #3498db; /* Set your preferred color for the arrowheads */
+ 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 6vw; /* Set your preferred font size */
+    line-height: 0.45; /* Adjust the line-height to prevent the increase in button height */
+  }
+  
+  /* Optional: Hover styles */
+  .button-container button:hover {
+    color:  #50b2f3;
+  }
+  
+
+/* Styles for screens smaller than 600px */
+@media screen and (max-width: 599px) {
+    #name {
+        font-size: 8vw; /* Adjust the font size accordingly */
+    }
+
+    #job-title  {
+        font-size: 4vw; /* Adjust the font size accordingly */
+    }
+
+    #line {
+        width: 30vw; 
+    }
+
+    img {
+        width: 30%;
+        height: 20%;
+    }
+
+    .button-container {
+        width: 20%;
+    }
+
+    .button-container button{
+        font-size: 15vw;
+    }
+}
+
+
+
+/* Styles for screens 600px wide and larger */
+@media screen and (min-width: 600px) {
+    #name {
+        font-size: 5vw;
+    }
+
+    #job-title  {
+        font-size: 3vw;
+    }
+    .button-container button{
+        font-size: 10vw;
+    }
+
+    .button-container {
+        width: 15%;
+    }
+  }
+  
+  /* Styles for screens 900px wide and larger */
+  @media screen and (min-width: 900px) {
+    #name  {
+        font-size: 4vw;
+    }
+
+    #job-title  {
+        font-size: 2vw;
+    }
+    .button-container button{
+        font-size: 7vw;
+    }
+
+    .button-container {
+        width: 10%;
+    }
+  }
+  
+  /* Styles for screens 1200px wide and larger */
+  @media screen and (min-width: 1200px) {
+    #name  {
+        font-size: 3vw;
+    }
+
+    #job-title  {
+        font-size: 1.5vw;
+    }
+
+    .button-container button{
+        font-size: 7vw;
+    }
+  }
